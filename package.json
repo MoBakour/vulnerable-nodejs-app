@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.10",
+        "express": "^4.19.2",
+        "mongoose": "^8.3.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0"
+    },
+    "name": "vulnerable-app",
+    "version": "1.0.0",
+    "description": "Vulnerable NodeJS Web App",
+    "main": "./src/server.js",
+    "scripts": {
+        "dev": "nodemon",
+        "start": "node ./src/server.js"
+    },
+    "author": "Swordax",
+    "license": "ISC"
+}

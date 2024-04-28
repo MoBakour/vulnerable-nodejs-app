@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial";
+}
+
+body {
+    background-color: #c5c5c5;
+}
+
+.posts {
+    height: calc(100vh - 198px);
+    width: 90%;
+    margin: 10px auto;
+    overflow-y: auto;
+}
+
+.posts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.posts::-webkit-scrollbar-thumb {
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.post {
+    background-color: #e2e2e2;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.post .username {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.post .text {
+    padding: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.username-input,
+.text-input,
+.submit-btn {
+    border: none;
+    outline: none;
+    font-size: 22px;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.submit-btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.7;
+}
