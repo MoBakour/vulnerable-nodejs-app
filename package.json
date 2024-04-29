@@ -14,7 +14,8 @@
     "main": "./src/server.js",
     "scripts": {
         "dev": "nodemon",
-        "start": "node ./src/server.js"
+        "start": "node ./src/server.js",
+        "build": "npm install"
     },
     "author": "Swordax",
     "license": "ISC"
