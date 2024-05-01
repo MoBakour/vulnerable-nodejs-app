@@ -64,3 +64,19 @@ function insertPost(post) {
     `
     );
 }
+
+// clear messages
+async function clearMessages() {
+    const response = await fetch("/clear", {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+        posts.innerHTML = "";
+    }
+}
