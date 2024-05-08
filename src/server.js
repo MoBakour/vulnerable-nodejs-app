@@ -41,6 +41,7 @@ app.get("/", async (req, res) => {
         const posts = await Post.find();
         res.render("home.ejs", { posts });
     } catch (err) {
+        console.error(err.message);
         res.status(400).json({
             success: false,
             error: err.message,

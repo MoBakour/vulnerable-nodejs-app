@@ -78,5 +78,26 @@ async function clearMessages() {
 
     if (data.success) {
         posts.innerHTML = "";
+        console.log("Successfully cleared messages");
+    } else {
+        console.error(data.error);
+    }
+}
+
+async function deleteMessages(password) {
+    const response = await fetch(`/delete/${password}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+        posts.innerHTML = "";
+        console.log("Successfully deleted messages");
+    } else {
+        console.error(data.error);
     }
 }
