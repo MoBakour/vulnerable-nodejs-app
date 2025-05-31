@@ -17,6 +17,6 @@
         "start": "node ./src/server.js",
         "build": "npm install"
     },
-    "author": "Swordax",
+    "author": "MoBakour",
     "license": "ISC"
 }
